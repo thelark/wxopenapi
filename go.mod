@@ -1,4 +1,4 @@
-module wxopenapi
+module github.com/thelark/wxopenapi
 
 go 1.14
 
