@@ -2,10 +2,11 @@ package wxopenapi
 
 import (
 	"fmt"
-	"github.com/thelark/request"
 	"path"
 	"runtime"
 	"strings"
+
+	"github.com/thelark/request"
 )
 
 const (
@@ -59,6 +60,22 @@ func WithComponentAppSecret(componentAppSecret string) option {
 func WithComponentAccessToken(componentAccessToken string) option {
 	return func(self api) {
 		self.set("ComponentAccessToken", componentAccessToken)
+	}
+}
+
+func WithRedirectUri(redirectUri string) option {
+	return func(self api) {
+		self.set("RedirectUri", redirectUri)
+	}
+}
+func WithScope(scope string) option {
+	return func(self api) {
+		self.set("Scope", scope)
+	}
+}
+func WithState(state string) option {
+	return func(self api) {
+		self.set("State", state)
 	}
 }
 
