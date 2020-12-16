@@ -3,8 +3,9 @@ package wxopenapi
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/thelark/request"
 	"reflect"
+
+	"github.com/thelark/request"
 )
 
 type cgiBinComponentOptionName string
